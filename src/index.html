@@ -1,18 +1,36 @@
-
 <!DOCTYPE html>
-<html lang="en" class="sr">
+<html lang="pt-BR" class="sr">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
-    <!-- Todo: put here your site title -->
-    <title>Alberto Silva | Developer</title>
-    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="Alberto, Silva, skill" />
-    <!-- Todo: improve your SEO by adding a small description of you -->
-    <meta name="description" content="Alberto Silva | Developer" />
+    <title>Alberto Ramos | Desenvolvedor Back-end</title>
+
+    <!-- SEO -->
+    <meta
+      name="keywords"
+      content="Alberto Ramos, desenvolvedor back-end, Python, FastAPI, Node.js, JavaScript, APIs REST, PostgreSQL, SQLAlchemy, automação, integrações, LLM, IA aplicada, ETL, Streamlit"
+    />
+    <meta
+      name="description"
+      content="Portfólio de Alberto Ramos, desenvolvedor back-end focado em Python, APIs REST, automação, integrações e IA aplicada. Projetos: Juris AI (LegalTech SaaS), API BCB (ETL) e BDI (NL->SQL)."
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Alberto Ramos | Desenvolvedor Back-end" />
+    <meta
+      property="og:description"
+      content="Python, APIs REST, automação, integrações e IA aplicada. Projetos: Juris AI, API BCB (ETL) e BDI (NL->SQL)."
+    />
+    <meta property="og:type" content="website" />
+    <!-- Se tiver uma imagem social, coloque aqui -->
+    <!-- <meta property="og:image" content="assets/og-image.png" /> -->
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- <meta name="twitter:image" content="assets/og-image.png" /> -->
 
     <link
       rel="stylesheet"
@@ -24,68 +42,67 @@
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
     ></script>
 
-    <!-- Todo: remove the below script once you finish your portfolio -->
+    <!-- Remova quando quiser (botões GitHub) -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
-  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
 
-    <!-- **** Hero Section **** -->
+    <!-- Hero -->
     <section id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title load-hidden">
-          Muito prazer, me chamo <span class="text-color-main">Alberto</span>
+          Prazer, sou <span class="text-color-main">Alberto Ramos</span>
           <br />
-        
+          Desenvolvedor Back-end focado em APIs, automação e IA aplicada.
         </h1>
         <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
-            >Veja um pouco mais do meu trabalho !</a
-          >
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#projects">
+            Ver projetos
+          </a>
         </p>
       </div>
     </section>
-    <!-- /END Hero Section -->
 
-    <!-- **** About Section **** -->
+    <!-- About -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title load-hidden">sobre mim</h2>
+        <h2 class="section-title load-hidden">Sobre mim</h2>
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__image load-hidden">
               <img
-                alt="Profile Image"
+                alt="Foto de perfil de Alberto Ramos"
                 class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
+                width="300"
                 src="assets/foto perfil.jpeg"
-                alt="Profile Image"
               />
             </div>
           </div>
+
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                Sou desenvolvedor web e dba, apaixonado por tecnologia e inovação.
-                tenho conhecimentos em diversas tecnologias, como: HTML, CSS, JavaScript, Python, MySQL, entre outras.
-                sempre em busca de novos conhecimentos e desafios.
+                Sou desenvolvedor Back-end com experiência em desenvolvimento de
+                APIs REST, integrações e automações. Trabalho principalmente com
+                Python e JavaScript, sempre buscando entregar soluções bem
+                estruturadas e fáceis de manter.
+              </p>
 
-              </p>
               <p class="about-wrapper__info-text">
-                Também tenho experiência na área administrativa, com foco em gestão de pessoas e processos.
-                sou um intusiasta que se apaixona a cada dia pela tecnologia e suas possibilidades.
+                Também tenho vivência administrativa, o que me ajuda a entender
+                processos, organização e necessidades reais do negócio.
               </p>
+
               <span class="d-flex mt-3">
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--resume"
-                  href="assets/curriculo novo.pdf"
+                  href="assets/curriculo_alberto_modelo_mateus.pdf"
                 >
-                  Aqui você pode ler um pouco mais sobre minha trajetória
+                  Baixar currículo (PDF)
                 </a>
               </span>
             </div>
@@ -93,31 +110,87 @@
         </div>
       </div>
     </section>
-    <!-- /END About Section -->
 
-    <!-- **** Projects Section **** -->
+    <!-- Projects -->
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">Projetos</h2>
 
-          <!-- Notice: each .row is a project -->
+          <!-- Juris AI -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Juris AI (LegalTech SaaS)</h3>
+                <div>
+                  <p class="mb-4">
+                    Plataforma de gestão jurídica (Legal Ops) com controle multiusuário por escritório,
+                    governança de permissões, gestão de clientes/processos/prazos/documentos e integrações
+                    com Google Drive e Google Calendar. Base preparada para IA jurídica (RAG) e automações
+                    de cobrança de documentos por e-mail.
+                  </p>
+                  <p class="mb-4">
+                    Stack: Python, FastAPI, PostgreSQL, SQLAlchemy, JWT, Google APIs.
+                  </p>
+                </div>
+
+                <!-- Se tiver link live e repo, coloca aqui -->
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="#contact"
+                >
+                  Falar comigo sobre o projeto
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Imagem do projeto Juris AI"
+                      class="img-fluid"
+                      src="assets/juris-ai.jpg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /Juris AI -->
+
+          <!-- API BCB -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">API BCB (ETL)</h3>
                 <div>
                   <p class="mb-4">
-                    O Projeto de ETL para Dados do Banco Central foi um trabalho acadêmico que utilizou Google Colab e Python para extrair, tratar e padronizar dados econômicos da API do Banco Central, tornando-os acessíveis para análise no Fecomércio. 🚀
+                    ETL para extração, tratamento e padronização de dados econômicos a partir
+                    da API do Banco Central. Estruturação do pipeline para análise e uso em
+                    relatórios.
+                  </p>
+                  <p class="mb-4">
+                    Stack: Python, Pandas, SQLite, Requests, Google Colab.
                   </p>
                 </div>
+
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
                   href="https://colab.research.google.com/drive/1Bo9VBTHuPZUKBxUvv1kcV1dURs38eMrt"
                 >
-                  See Live
+                  Ver projeto
                 </a>
                 <a
                   rel="noreferrer"
@@ -125,10 +198,11 @@
                   class="cta-btn text-color-main"
                   href="https://colab.research.google.com/drive/1Bo9VBTHuPZUKBxUvv1kcV1dURs38eMrt"
                 >
-                  Source Code
+                  Código
                 </a>
               </div>
             </div>
+
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
                 <a rel="noreferrer" href="#!" target="_blank">
@@ -140,34 +214,40 @@
                     class="thumbnail rounded js-tilt"
                   >
                     <img
-                      alt="Project Image"
+                      alt="Imagem do projeto API BCB"
                       class="img-fluid"
-                      src="/src/assets/bd.jpg"
+                      src="assets/bd.jpg"
                     />
                   </div>
                 </a>
               </div>
             </div>
           </div>
-          <!-- /END Project -->
+          <!-- /API BCB -->
 
-          <!-- Notice: each .row is a project -->
+          <!-- BDI -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">BDI</h3>
+                <h3 class="project-wrapper__text-title">BDI (NL → SQL com IA)</h3>
                 <div>
                   <p class="mb-4">
-                    O BDI - Banco de Dados Intelligence é um projeto acadêmico que utiliza o GPT4All para interpretar perguntas em linguagem natural e convertê-las em consultas SQL para um banco de dados SQLite. Com uma interface interativa em Streamlit, ele facilita o acesso a informações sem necessidade de conhecimento técnico em SQL. 🚀
+                    Aplicação que interpreta perguntas em linguagem natural e converte em consultas SQL
+                    para um banco SQLite, permitindo acesso a dados sem necessidade de conhecimento em SQL.
+                    Interface construída em Streamlit.
+                  </p>
+                  <p class="mb-4">
+                    Stack: Python, Streamlit, SQLite, GPT4All (LLM).
                   </p>
                 </div>
+
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
                   href="https://github.com/albertoramos98/llm.git"
                 >
-                  See Live
+                  Ver repositório
                 </a>
                 <a
                   rel="noreferrer"
@@ -175,10 +255,11 @@
                   class="cta-btn text-color-main"
                   href="https://github.com/albertoramos98/llm.git"
                 >
-                  Source Code
+                  Código
                 </a>
               </div>
             </div>
+
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
                 <a rel="noreferrer" href="#!" target="_blank">
@@ -190,45 +271,52 @@
                     class="thumbnail rounded js-tilt"
                   >
                     <img
-                      alt="Project Image"
+                      alt="Imagem do projeto BDI"
                       class="img-fluid"
-                      src="/src/assets/bdi.jpg"
+                      src="assets/bdi.jpg"
                     />
                   </div>
                 </a>
               </div>
             </div>
           </div>
-          <!-- /END Project -->
+          <!-- /BDI -->
 
-          <!-- Notice: each .row is a project -->
+          <!-- All My Links -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">All My Links</h3>
                 <div>
                   <p class="mb-4">
-                    Projeto pessoal para criação de multilinks para Biografia do Instagram usando API do spotfy
+                    Página de multilinks para bio, com integração de conteúdo e links externos.
+                    Projeto pessoal publicado na Vercel.
+                  </p>
+                  <p class="mb-4">
+                    Stack: JavaScript, HTML, CSS, integrações web.
                   </p>
                 </div>
+
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
                   href="https://allmylinks-one.vercel.app/"
                 >
-                  See Live
+                  Ver projeto
                 </a>
+                <!-- Se tiver repo, troca o link abaixo para o GitHub -->
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
                   href="https://allmylinks-one.vercel.app/"
                 >
-                  Source Code
+                  Código
                 </a>
               </div>
             </div>
+
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
                 <a rel="noreferrer" href="#!" target="_blank">
@@ -240,7 +328,7 @@
                     class="thumbnail rounded js-tilt"
                   >
                     <img
-                      alt="Project Image"
+                      alt="Imagem do projeto All My Links"
                       class="img-fluid"
                       src="assets/allmylinks2.jpg"
                     />
@@ -249,63 +337,66 @@
               </div>
             </div>
           </div>
-          <!-- /END Project -->
+          <!-- /All My Links -->
         </div>
       </div>
     </section>
-    <!-- /END Projects Section -->
 
-    <!-- **** Contact Section **** -->
+    <!-- Contact -->
     <section id="contact">
       <div class="container">
         <h2 class="section-title">Contato</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">81 - 9 93644694</p>
+          <p class="contact-wrapper__text">WhatsApp: (81) 9 9364-4694</p>
           <a
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
             href="https://wa.me/message/KZEERNCSBNE2B1"
-            >Entre em contato !</a
           >
+            Entre em contato
+          </a>
         </div>
       </div>
     </section>
-    <!-- /END Contact Section -->
 
-    <!-- **** Footer Section **** -->
+    <!-- Footer -->
     <footer class="footer navbar-static-bottom">
       <div class="container">
         <a rel="noreferrer" href="#top" class="back-to-top">
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
+
         <div class="social-links">
-          
-          <a rel="noreferrer" href="https://www.linkedin.com/in/albertoramos123?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+          <a
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/albertoramos123?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+          >
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="https://github.com/albertoramos98" target="_blank">
+          <a
+            rel="noreferrer"
+            href="https://github.com/albertoramos98"
+            target="_blank"
+          >
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
 
         <hr />
 
-        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
         <p class="footer__text">
           © 2025
-          <a rel="noreferrer" href="https://github.com/albertoramos98" target="_blank"
+          <a
+            rel="noreferrer"
+            href="https://github.com/albertoramos98"
+            target="_blank"
             >Alberto Ramos</a
           >
         </p>
-
-        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-    
-        
-        </p>
       </div>
     </footer>
-    <!-- /END Footer Section -->
 
     <script defer type="module" src="index.js"></script>
   </body>
